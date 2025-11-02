@@ -117,41 +117,57 @@ footer {
   background-color: #58a6ff;
   color: white;
 }
-/* Hakkımda sayfası */
+/* --- Hakkımda sayfası düzenli ve profesyonel stil --- */
 .content {
-  max-width: 850px;
-  margin: 40px auto;
-  padding: 0 20px;
-  line-height: 1.7;
-}
-
-.article-box {
-  background-color: #161b22;
-  border: 1px solid #30363d;
-  padding: 30px;
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #1e1e1e;
   border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  border: 1px solid #30363d;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  color: #dcdcdc;
+  line-height: 1.8;
 }
 
+/* Başlıklar */
 .article-box h2 {
+  font-size: 1.8em;
   color: #58a6ff;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .article-box .highlight {
-  color: #f87171;
-  margin-bottom: 20px;
+  font-size: 1.3em;
+  color: #ff7878;
+  font-weight: 600;
+  margin: 25px 0 20px 0;
+  border-left: 4px solid #ff7878;
+  padding-left: 10px;
 }
 
+/* Paragraflar */
 .article-box p {
-  margin-bottom: 15px;
-  color: #d1d5db;
+  margin-bottom: 18px;
+  text-align: justify;
   font-size: 1.05em;
+  color: #e4e4e4;
 }
 
+/* Anahtar kelimeler */
 .article-box b {
-  color: #93c5fd;
+  color: #9ecbff;
+  font-weight: 600;
 }
+
+/* Hover efekti (isteğe bağlı) */
+.article-box p:hover {
+  transition: color 0.2s ease;
+  color: #ffffff;
+}
+
+
 
 
 
