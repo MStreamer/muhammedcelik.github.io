@@ -88,3 +88,33 @@ footer {
   color: #8b949e;
   background-color: #161b22;
 }
+.menu {
+  display: flex;
+  justify-content: center;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  margin: 20px auto;
+  width: fit-content;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.menu a {
+  text-decoration: none;
+  color: #111;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-right: 1px solid #ddd;
+  background-color: white;
+  transition: all 0.2s;
+}
+.menu a:last-child {
+  border-right: none;
+}
+.menu a:hover {
+  background-color: #e0e0e0;
+}
+.menu a.active {
+  background-color: #58a6ff;
+  color: white;
+}
+
