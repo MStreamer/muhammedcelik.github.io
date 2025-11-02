@@ -117,4 +117,41 @@ footer {
   background-color: #58a6ff;
   color: white;
 }
+/* Hakkımda sayfası */
+.content {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.7;
+}
+
+.article-box {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.article-box h2 {
+  color: #58a6ff;
+  margin-bottom: 10px;
+}
+
+.article-box .highlight {
+  color: #f87171;
+  margin-bottom: 20px;
+}
+
+.article-box p {
+  margin-bottom: 15px;
+  color: #d1d5db;
+  font-size: 1.05em;
+}
+
+.article-box b {
+  color: #93c5fd;
+}
+
+
 
