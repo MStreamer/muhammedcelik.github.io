@@ -57,9 +57,9 @@ main {
 }
 
 /* ---- PARAGRAFLAR ---- */
-p {
-  text-align: justify;      /* İki yana yaslı */
-  line-height: 1.8;         /* Satır arası mesafe */
+ p {
+  text-align: justify;
+  line-height: 1.8;
   font-size: 16px;
   margin-bottom: 18px;
 }
@@ -78,6 +78,7 @@ footer {
   border-top: 1px solid #ddd;
   background: #fafafa;
 }
+
 
 
 
