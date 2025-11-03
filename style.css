@@ -167,6 +167,20 @@ footer {
   color: #ffffff;
 }
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hakkımda - Muhammed Çelik</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    p {
+      text-align: justify;
+      line-height: 1.6; /* satır arası mesafe biraz açılır, okunabilirlik artar */
+      font-size: 16px;
+    }
+  </style>
+</head>
+
 
 
 
