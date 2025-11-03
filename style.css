@@ -1,236 +1,80 @@
+/* ---- GENEL ---- */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #0d1117;
-  color: #c9d1d9;
   margin: 0;
-  padding: 0;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
 }
 
+/* ---- HEADER ---- */
 header {
+  background: linear-gradient(90deg, #222, #444);
+  color: white;
   text-align: center;
-  padding: 50px 20px;
-  background-color: #161b22;
-  border-bottom: 1px solid #30363d;
+  padding: 30px 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
 header h1 {
-  color: #58a6ff;
-  font-size: 2em;
-  margin-bottom: 10px;
+  margin: 0;
+  font-size: 42px;
+  letter-spacing: 3px;
+}
+
+header span {
+  color: #ff6a00;
+  font-weight: bold;
 }
 
 header p {
-  color: #8b949e;
+  margin: 8px 0 0;
+  font-size: 18px;
+  font-style: italic;
+  color: #ccc;
+  letter-spacing: 1px;
 }
 
+/* ---- MENÜ ---- */
 nav {
-  margin-top: 20px;
+  background: #e8e8e8;
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
 }
 
 nav a {
-  color: #58a6ff;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-}
-
-section {
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: auto;
-}
-
-h2 {
-  color: #58a6ff;
-  border-bottom: 1px solid #30363d;
-  padding-bottom: 8px;
-}
-
-.project {
-  background-color: #161b22;
-  padding: 20px;
-  margin-top: 20px;
-  border-radius: 10px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-input, textarea {
-  background-color: #0d1117;
-  border: 1px solid #30363d;
-  color: #c9d1d9;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 6px;
-}
-
-button {
-  background-color: #58a6ff;
-  color: #0d1117;
-  border: none;
-  padding: 10px;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #79b8ff;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  border-top: 1px solid #30363d;
-  color: #8b949e;
-  background-color: #161b22;
-}
-.menu {
-  display: flex;
-  justify-content: center;
-  background-color: #f3f3f3;
-  border-radius: 8px;
-  margin: 20px auto;
-  width: fit-content;
-  overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-.menu a {
-  text-decoration: none;
-  color: #111;
-  font-weight: bold;
-  padding: 12px 20px;
-  border-right: 1px solid #ddd;
-  background-color: white;
-  transition: all 0.2s;
-}
-.menu a:last-child {
-  border-right: none;
-}
-.menu a:hover {
-  background-color: #e0e0e0;
-}
-.menu a.active {
-  background-color: #58a6ff;
-  color: white;
-}
-/* --- Hakkımda sayfası düzenli ve profesyonel stil --- */
-.content {
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 40px;
-  background-color: #1e1e1e;
-  border-radius: 12px;
-  border: 1px solid #30363d;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
-  color: #dcdcdc;
-  line-height: 1.8;
-}
-
-/* Başlıklar */
-.article-box h2 {
-  font-size: 1.8em;
-  color: #58a6ff;
-  margin-bottom: 8px;
-}
-
-.article-box .highlight {
-  font-size: 1.3em;
-  color: #ff7878;
-  font-weight: 600;
-  margin: 25px 0 20px 0;
-  border-left: 4px solid #ff7878;
-  padding-left: 10px;
-}
-
-/* Paragraflar */
-.article-box p {
-  margin-bottom: 18px;
-  text-align: justify;
-  font-size: 1.05em;
-  color: #e4e4e4;
-}
-
-/* Anahtar kelimeler */
-.article-box b {
-  color: #9ecbff;
-  font-weight: 600;
-}
-
-/* Hover efekti (isteğe bağlı) */
-.article-box p:hover {
-  transition: color 0.2s ease;
-  color: #ffffff;
-}
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hakkımda - Muhammed Çelik</title>
-  <link rel="stylesheet" href="style.css">
-/* ---- GENEL YAZI DÜZENİ ---- */
-body {
-  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
-  background-color: #f5f5f5;
   color: #333;
-  margin: 0;
-  padding: 0;
+  text-decoration: none;
+  margin: 0 18px;
+  font-weight: 500;
+  transition: 0.2s;
 }
 
-/* ---- ANA İÇERİK BLOĞU ---- */
+nav a:hover, nav a.active {
+  color: #ff6a00;
+}
+
+/* ---- ANA İÇERİK ---- */
 main {
   max-width: 900px;
   margin: 40px auto;
-  background-color: #ffffff;
+  background: white;
   border-radius: 12px;
   padding: 40px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* ---- BAŞLIKLAR ---- */
-h2 {
-  color: #ff6a00;
-  font-size: 28px;
-  margin-top: 0;
-  margin-bottom: 10px;
-  text-align: left;
-}
-
-h3 {
-  color: #555;
-  font-size: 20px;
-  font-weight: 400;
-  margin-top: -5px;
-  margin-bottom: 25px;
-  text-align: left;
-}
-
 /* ---- PARAGRAFLAR ---- */
 p {
-  text-align: justify;        /* İki yana yaslı */
-  line-height: 1.7;           /* Satır arası mesafe */
+  text-align: justify;      /* İki yana yaslı */
+  line-height: 1.8;         /* Satır arası mesafe */
   font-size: 16px;
   margin-bottom: 18px;
-  color: #333333;
 }
 
-/* Paragraflarda önemli kelimeler */
 p strong {
   color: #ff6a00;
   font-weight: 600;
-}
-
-/* ---- ALINTI VE MOTTO STİLİ ---- */
-p strong:last-of-type {
-  display: inline-block;
-  font-style: italic;
-  font-weight: 700;
-  color: #ff6a00;
-  letter-spacing: 0.5px;
 }
 
 /* ---- FOOTER ---- */
@@ -242,10 +86,3 @@ footer {
   border-top: 1px solid #ddd;
   background: #fafafa;
 }
-</head>
-
-
-
-
-
-
